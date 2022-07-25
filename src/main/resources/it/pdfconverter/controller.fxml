@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.pdfconverter.controller.Controller">
+    <top>
+        <MenuBar fx:id="barramenu" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu fx:id="info" mnemonicParsing="false" text="?">
+                    <items>
+                        <MenuItem fx:id="about" mnemonicParsing="false" onAction="#handleAbout" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <SplitPane orientation="VERTICAL" prefHeight="375.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                <children>
+                                    <Button fx:id="apri" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onApriButtonClick" text="Apri" />
+                        <Button layoutX="68.0" layoutY="14.0" mnemonicParsing="false"  onAction="#onConvertiButtonClick" text="Converti" />
+                        <Button layoutX="146.0" layoutY="14.0" mnemonicParsing="false" onAction="#onUnisciButtonClick"  text="Unisci" />
+                                </children>
+                            </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
